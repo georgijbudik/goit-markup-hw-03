@@ -30,7 +30,7 @@ p {
 
 .list {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -42,6 +42,17 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+address {
+  font-style: normal;
 }
 
 .page-header {
@@ -57,6 +68,19 @@ img {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.visually-hiden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .logo.link {
@@ -120,7 +144,6 @@ img {
   margin-right: 40px;
 }
 .address-menu {
-  font-style: normal;
   margin-left: auto;
 }
 
@@ -148,7 +171,8 @@ img {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
+  max-width: 496px;
 }
 
 .hero-button {
@@ -176,10 +200,6 @@ img {
 }
 
 /* ---------------EXAMPLES AND ADVICES-------------------- */
-
-.main-tipses {
-  display: flex;
-}
 
 .advices-list {
   display: flex;
@@ -247,7 +267,7 @@ img {
 }
 
 .padding-cards {
-  padding: 16px 32px;
+  padding: 32px 16px;
 }
 
 .employees-list .employee-item-title {
@@ -337,8 +357,7 @@ img {
 }
 
 .services-item {
-  width: calc((100% - 72px) / 3);
-  border-bottom: 1px solid #e7e9fc;
+  width: calc((100% - 48px) / 3);
 }
 
 .services-item:not(:nth-child(3n)) {
@@ -348,11 +367,10 @@ img {
   margin-bottom: 48px;
 }
 
-.text {
+.services-wrap {
   padding: 32px 0 32px 16px;
-  border-bottom: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .services-title {
   margin-bottom: 8px;
